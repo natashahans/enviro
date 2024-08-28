@@ -1,0 +1,616 @@
+/* media queries */
+@media (min-width: 2300px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-left img {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .navlinks {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1100px) {
+  .hero-left {
+    margin-top: 4rem;
+  }
+  .about-left img {
+    margin-top: 6rem;
+  }
+  html {
+    font-size: 11px;
+  }
+  .contact-left {
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 1000px) {
+  #mission-img {
+    display: none;
+  }
+  .top-navbar {
+    margin: 0 4rem 0rem 8rem;
+  }
+  .misson-container {
+    height: 40vw;
+    grid-template-columns: 2.4fr 1fr;
+  }
+  .mission-left {
+    height: 30vw;
+  }
+  .mission-description {
+    width: 90%;
+  }
+  .mission-img {
+    height: 30vw;
+  }
+  .footer-left input {
+    width: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .mission-description {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .hero-left {
+    margin-top: 3rem;
+  }
+  .navlinks {
+    gap: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .misson-container {
+    height: 43vw;
+    grid-template-columns: 1.6fr 1fr;
+  }
+  .mission-left {
+    height: 35vw;
+  }
+  .mission-img {
+    height: 35vw;
+  }
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .navlinks .navlink a {
+    color: var(--dark-color);
+  }
+  .top-navbar {
+    margin: 1.5rem 3rem 1rem;
+  }
+  .top-navbar nav {
+    display: none;
+  }
+  .hero-color-block {
+    display: none;
+  }
+  .hero-container {
+    margin: 4vw 5rem 0;
+  }
+  .hero-container .hero-left,
+  .hero-container .hero-right {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-container .hero-right img {
+    margin-top: 4rem;
+    width: 70%;
+  }
+  .hero-left h1 {
+    font-size: 5vw;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+  }
+  .hero-btns {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .about-container {
+    margin: 9rem 0 0 3rem;
+  }
+  .about-left img {
+    width: 40vw;
+  }
+  .about-right {
+    margin-left: 2rem;
+  }
+  .about-description {
+    margin-top: 1.5rem;
+  }
+
+  .about-features-container {
+    width: 35vw;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  .about-feature i {
+    font-size: 1.4rem;
+  }
+  .about-feature p {
+    font-size: 0.9rem;
+  }
+
+  .sustainable-container {
+    margin: 13rem 3rem 0;
+  }
+
+  .sustainable-left {
+    width: 90%;
+  }
+
+  .grid-2 {
+    grid-template-columns: 45% 55%;
+  }
+  .products-container {
+    margin: 5rem 3rem;
+  }
+  .product button {
+    margin-top: 4rem;
+  }
+
+  .misson-container {
+    height: 55vw;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .mission-left {
+    height: 43vw;
+    width: 85%;
+    margin: 1.9rem 3rem 2rem 3rem;
+    overflow: hidden;
+  }
+  .mission-description {
+    margin-bottom: 2rem;
+  }
+  .mission-img {
+    display: none;
+  }
+
+  /* ----------------- */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .top-navbar nav {
+    display: block;
+  }
+  .navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    margin-left: -3rem;
+  }
+  .navlink {
+    margin-bottom: 1.5rem;
+  }
+  .navbar .navlinks .navlink a {
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .navbar {
+    background-color: var(--light-color);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* display none Allows NO transitions at all */
+    /* display: none; */
+
+    /*but we can animate opacity */
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .nav-close {
+    display: block;
+  }
+  .nav-open .nav-open {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .navbar:link,
+  .navbar:visited {
+    font-size: 3rem;
+  }
+
+  .nav-btn {
+    font-size: 1.7rem;
+  }
+
+  .partners-container {
+    margin-top: 6rem;
+  }
+  .partners {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+  }
+  .partners-container p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  /* contact section */
+
+  .contact-container {
+    margin: 6rem 3rem 0 3rem;
+  }
+
+  .contact-right img {
+    width: 100%;
+  }
+  .contact-left {
+    margin-top: 0;
+  }
+  .contact-left p {
+    margin-top: 1.5rem;
+  }
+  .contact-btns {
+    margin-top: 2rem;
+  }
+
+  .footer-container {
+    margin: 11rem 3rem 5rem;
+  }
+  .footer-left input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-left h1 {
+    font-size: 6vw;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-container {
+    position: relative;
+    gap: 0;
+    margin-top: 6rem;
+  }
+  .about-features-container {
+    position: absolute;
+    top: 30%;
+    height: 4rem;
+    padding-right: 6rem;
+  }
+  .about-right {
+    margin: 1rem 0 0 0;
+  }
+
+  .sustainable-container {
+    margin-top: 5rem;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .hidden-btn {
+    display: block;
+  }
+  .hide-btn {
+    display: none;
+  }
+  .misson-container {
+    height: 75vw;
+  }
+  .mission-left {
+    height: 60vw;
+    width: 80%;
+    margin: 1.9rem 3rem 2rem 3rem;
+    overflow: hidden;
+  }
+  .mission-description {
+    margin-bottom: 2rem;
+  }
+  .about-feature p {
+    font-size: 1rem;
+    width: 6rem;
+  }
+  .partner h4 {
+    font-size: 1.3rem;
+  }
+  .partners {
+    flex-wrap: wrap;
+    column-gap: 7rem;
+  }
+  .copyright ul {
+    gap: 1rem;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer-left input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container .hero-right img {
+    width: 85%;
+  }
+  .about-container {
+    margin-top: 11rem;
+  }
+  .about-left {
+    margin-top: 6rem;
+  }
+  .about-left img {
+    width: 90%;
+    border-radius: 50% 0 0 0;
+  }
+  .about-features-container {
+    top: 0%;
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    padding: 1.8rem 1.5rem 1.3rem 1.5rem;
+  }
+  .about-feature {
+    text-align: center;
+  }
+  .about-feature i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  html {
+    font-size: 11.5px;
+  }
+  .hero-left h1 {
+    font-size: 7vw;
+  }
+  .about-container {
+    margin-top: 8rem;
+  }
+  .sustainable-container {
+    grid-template-columns: 60% 40%;
+  }
+
+  .partner i {
+    font-size: 2rem;
+  }
+  .partner h4 {
+    font-size: 1.2rem;
+  }
+  .partners {
+    column-gap: 5rem;
+  }
+  .left {
+    grid-area: left;
+  }
+
+  .right {
+    grid-area: right;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "right"
+      "left";
+  }
+  .contact-left {
+    margin-top: 4rem;
+  }
+  .footer-left input {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .copyright ul {
+    gap: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .footer-subscribe-form {
+    gap: 1rem;
+  }
+}
+@media (max-width: 470px) {
+  .hero-container {
+    margin: 2rem 2rem 0;
+  }
+  .hero-container .hero-right img {
+    width: 85%;
+  }
+  .hero-left h1 {
+    font-weight: 800;
+  }
+
+  .about-container {
+    margin-top: 7rem;
+  }
+  .about-left {
+    margin-top: 6rem;
+  }
+  .about-left img {
+    width: 90%;
+    border-radius: 50% 0 0 0;
+  }
+  .about-features-container {
+    top: 0%;
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    padding: 1.8rem 1.5rem 1.3rem 1.5rem;
+  }
+  .about-feature {
+    text-align: center;
+  }
+  .about-feature i {
+    font-size: 2rem;
+  }
+  .partner h4 {
+    font-size: 1.2rem;
+  }
+  .partners {
+    column-gap: 2.8rem;
+  }
+  .misson-container {
+    height: 120vw;
+  }
+  .mission-left {
+    height: 90vw;
+    width: 75%;
+  }
+  .mission-left h2 {
+    width: 90%;
+  }
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+  .footer-right {
+    margin-top: 4rem;
+    margin-left: -3rem;
+  }
+}
+@media (max-width: 420px) {
+  .hero-left h1 {
+    font-size: 7.5vw;
+  }
+  .top {
+    grid-area: top;
+  }
+
+  .bottom {
+    grid-area: bottom;
+  }
+  .about-container {
+    grid-template-areas: "bottom" "top";
+  }
+  .about-left {
+    margin-top: -3rem;
+  }
+  .about-right {
+    margin-top: 10rem;
+  }
+  .sustainable-container {
+    grid-template-columns: 1fr;
+  }
+  .sustainable-left {
+    width: 100%;
+  }
+  .sustainable-right p {
+    margin-top: 2rem;
+  }
+  .misson-container {
+    height: 120vw;
+  }
+  .mission-left {
+    height: 100vw;
+    width: 75%;
+  }
+  .partners-container p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .partners {
+    column-gap: 2rem;
+  }
+  .footer-container {
+    margin-top: 7rem;
+  }
+
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright ul {
+    margin-left: -3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .misson-container {
+    height: 150vw;
+  }
+  .mission-left {
+    height: 130vw;
+    width: 70%;
+  }
+  .partners-container p:nth-child(1) {
+    width: 90%;
+    text-align: center;
+  }
+  .partners {
+    column-gap: 0.8rem;
+  }
+}
